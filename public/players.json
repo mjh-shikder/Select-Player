@@ -1,0 +1,122 @@
+[
+  {
+    "playerImage": "https://media.crictracker.com/media/featureimage/2019/10/Shakib-Al-Hasan-1-1.jpg",
+    "playerName": "Shakib Al Hasan",
+    "playerCountry": "Bangladesh",
+    "playingRole": "All-rounder",
+    "rating": 9.5,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Slow left-arm orthodox",
+    "price": 120000
+  },
+  {
+    "playerImage": "https://media.crictracker.com/media/featureimage/2019/10/Shakib-Al-Hasan-1-1.jpg",
+    "playerName": "Tamim Iqbal",
+    "playerCountry": "Bangladesh",
+    "playingRole": "Batsman",
+    "rating": 8.7,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": 90000
+  },
+  {
+    "playerImage": "https://media.crictracker.com/media/featureimage/2019/10/Shakib-Al-Hasan-1-1.jpg",
+    "playerName": "Chris Gayle",
+    "playerCountry": "West Indies",
+    "playingRole": "Batsman",
+    "rating": 9.0,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": 150000
+  },
+  {
+    "playerImage": "https://media.crictracker.com/media/featureimage/2019/10/Shakib-Al-Hasan-1-1.jpg",
+    "playerName": "Andre Russell",
+    "playerCountry": "West Indies",
+    "playingRole": "All-rounder",
+    "rating": 9.3,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm fast",
+    "price": 140000
+  },
+  {
+    "playerImage": "https://media.crictracker.com/media/featureimage/2019/10/Shakib-Al-Hasan-1-1.jpg",
+    "playerName": "David Miller",
+    "playerCountry": "South Africa",
+    "playingRole": "Batsman",
+    "rating": 8.5,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": 100000
+  },
+  {
+    "playerImage": "https://media.crictracker.com/media/featureimage/2019/10/Shakib-Al-Hasan-1-1.jpg",
+    "playerName": "Sunil Narine",
+    "playerCountry": "West Indies",
+    "playingRole": "All-rounder",
+    "rating": 8.9,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": 110000
+  },
+  {
+    "playerImage": "https://media.crictracker.com/media/featureimage/2019/10/Shakib-Al-Hasan-1-1.jpg",
+    "playerName": "Mustafizur Rahman",
+    "playerCountry": "Bangladesh",
+    "playingRole": "Bowler",
+    "rating": 8.6,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Left-arm fast-medium",
+    "price": 85000
+  },
+  {
+    "playerImage": "https://media.crictracker.com/media/featureimage/2019/10/Shakib-Al-Hasan-1-1.jpg",
+    "playerName": "Kieron Pollard",
+    "playerCountry": "West Indies",
+    "playingRole": "All-rounder",
+    "rating": 8.8,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium-fast",
+    "price": 130000
+  },
+  {
+    "playerImage": "https://media.crictracker.com/media/featureimage/2019/10/Shakib-Al-Hasan-1-1.jpg",
+    "playerName": "AB de Villiers",
+    "playerCountry": "South Africa",
+    "playingRole": "Batsman",
+    "rating": 9.4,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "price": 160000
+  },
+  {
+    "playerImage": "https://media.crictracker.com/media/featureimage/2019/10/Shakib-Al-Hasan-1-1.jpg",
+    "playerName": "Mashrafe Mortaza",
+    "playerCountry": "Bangladesh",
+    "playingRole": "Bowler",
+    "rating": 8.2,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium-fast",
+    "price": 70000
+  },
+  {
+    "playerImage": "https://media.crictracker.com/media/featureimage/2019/10/Shakib-Al-Hasan-1-1.jpg",
+    "playerName": "Mahmudullah Riyad",
+    "playerCountry": "Bangladesh",
+    "playingRole": "All-rounder",
+    "rating": 8.4,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": 95000
+  },
+  {
+    "playerImage": "https://media.crictracker.com/media/featureimage/2019/10/Shakib-Al-Hasan-1-1.jpg",
+    "playerName": "Imran Tahir",
+    "playerCountry": "South Africa",
+    "playingRole": "Bowler",
+    "rating": 8.7,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Legbreak googly",
+    "price": 105000
+  }
+]

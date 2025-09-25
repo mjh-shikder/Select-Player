@@ -30,7 +30,7 @@ function App() {
         </div>
       </div>
       {/*  */}
-      <div>
+      <div className="w-11/12 mx-auto">
         <h2>Available Players </h2>
         <div>
           <button></button>

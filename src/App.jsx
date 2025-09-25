@@ -13,6 +13,8 @@ const fetchPlayers = async () => {
 }
 
 function App() {
+  const [toggle, setToggle] = useState(true)
+
   const playerPromise = fetchPlayers()
   return (
     <>
@@ -30,20 +32,24 @@ function App() {
         </div>
       </div>
       {/*  */}
-      <div className="w-11/12 mx-auto">
-        <h2>Available Players </h2>
-        <div>
-          <button></button>
+      <div className="w-11/12 mx-auto flex items-center justify-between ">
+        <h2 className="font-bold text-2xl  ">Available Players </h2>
+        <div className="box-border ">
+          <button onClick={()=>setToggle(true)}  className={`py-2 px-5 border-1 rounded-l-xl border-r-0 ${toggle===true?  "bg-[#e7fe29] text-black font-bold" :""}   `}>Available</button>
+          <button onClick={()=>setToggle(false)} className={`py-2 px-5 border-1 rounded-r-xl border-l-0 ${toggle===false? "bg-[#e7fe29] text-black font-bold" :""} `}>Selected <span>(0)</span></button>
         </div>
     </div>
 
-      <Suspense fallback={ <span className="loading loading-spinner loading-xl"></span>}>
+      {
+        toggle === true? <Suspense fallback={ <span className="loading loading-spinner loading-xl"></span>}>
         <AvailablePlayer playerPromise={playerPromise}></AvailablePlayer>
-     </Suspense>
+     </Suspense> : <SelectedPlayers></SelectedPlayers>
+      }
+     
       
 
 
-      <SelectedPlayers></SelectedPlayers>
+      
     </>
   );
 }

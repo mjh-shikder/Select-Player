@@ -1,15 +1,20 @@
 import React, { useState } from "react";
 import profileImg from "../../assets/images/profile.png";
 import flag from "../../assets/images/flag.png";
+import { toast } from "react-toastify";
 
 const PlayerCard = ({ player, setAvailableBlance, availableBlance, setPurchasedPlayers, purchasedPlayers }) => {
   const [isSelected, setIsSelected] = useState(false);
 
     const handleSelected = (player) => {
         if (availableBlance < player.price) {
-            alert('You Do not have Enough Balance')
+            toast('You Do not have Enough Balance')
             return;
-      }
+        }
+        if (purchasedPlayers.length === 6) {
+            toast("Maximum Number of player added")
+            return
+        }
     setIsSelected(true);
         setAvailableBlance(availableBlance - player.price);
         setPurchasedPlayers([...purchasedPlayers, player])

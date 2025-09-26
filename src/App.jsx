@@ -1,7 +1,6 @@
 import { Suspense, useState } from "react";
 import "./App.css";
-import navImg from "./assets/images/logo.png";
-import coin from "./assets/images/Currency.png";
+import { ToastContainer } from 'react-toastify';
 import AvailablePlayer from "./components/AvailablePlayers/AvailablePlayer";
 import SelectedPlayers from "./components/SelectedPlayers/SelectedPlayers";
 import Navbar from "./components/Navbar/Navbar";
@@ -79,6 +78,7 @@ function App() {
           purchasedPlayers={purchasedPlayers}
         ></SelectedPlayers>
       )}
+      <ToastContainer></ToastContainer>
     </>
   );
 }

@@ -11,12 +11,22 @@ const fetchPlayers = async () => {
   return res.json();
 };
 
-
 const playerPromise = fetchPlayers();
 
 function App() {
   const [toggle, setToggle] = useState(true);
-  const [availableBlance, setAvailableBlance] = useState(1000000)
+  const [availableBlance, setAvailableBlance] = useState(1000000);
+  const [purchasedPlayers, setPurchasedPlayers] = useState([]);
+
+  const removePlayer = (p) => {
+    const filterData = purchasedPlayers.filter(
+      (ply) => ply.playerName !== p.playerName);
+    console.log(filterData);
+    setPurchasedPlayers(filterData)
+    
+    setAvailableBlance(availableBlance+p.price)
+
+  };
 
   return (
     <>
@@ -24,7 +34,11 @@ function App() {
 
       {/*  */}
       <div className="w-11/12 mx-auto flex items-center justify-between ">
-        <h2 className="font-bold text-2xl  ">Available Players </h2>
+        <h2 className="font-bold text-2xl  ">
+          {toggle
+            ? "Available Plyers"
+            : `Selected Players (${purchasedPlayers.length}/6)`}
+        </h2>
         <div className="box-border ">
           <button
             onClick={() => setToggle(true)}
@@ -40,7 +54,7 @@ function App() {
               toggle === false ? "bg-[#e7fe29] text-black font-bold" : ""
             } `}
           >
-            Selected <span>(0)</span>
+            Selected <span>({purchasedPlayers.length})</span>
           </button>
         </div>
       </div>
@@ -51,10 +65,19 @@ function App() {
             <span className="loading loading-spinner loading-xl"></span>
           }
         >
-          <AvailablePlayer availableBlance={availableBlance} setAvailableBlance={setAvailableBlance} playerPromise={playerPromise}></AvailablePlayer>
+          <AvailablePlayer
+            purchasedPlayers={purchasedPlayers}
+            setPurchasedPlayers={setPurchasedPlayers}
+            availableBlance={availableBlance}
+            setAvailableBlance={setAvailableBlance}
+            playerPromise={playerPromise}
+          ></AvailablePlayer>
         </Suspense>
       ) : (
-        <SelectedPlayers></SelectedPlayers>
+        <SelectedPlayers
+          removePlayer={removePlayer}
+          purchasedPlayers={purchasedPlayers}
+        ></SelectedPlayers>
       )}
     </>
   );

@@ -5,7 +5,11 @@ import flag from "../../assets/images/flag.png";
 const PlayerCard = ({ player, setAvailableBlance, availableBlance }) => {
   const [isSelected, setIsSelected] = useState(false);
 
-  const handleSelected = (player) => {
+    const handleSelected = (player) => {
+        if (availableBlance < player.price) {
+            alert('You Do not have Enough Balance')
+            return;
+      }
     setIsSelected(true);
     setAvailableBlance(availableBlance - player.price);
   };

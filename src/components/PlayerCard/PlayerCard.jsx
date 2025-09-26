@@ -2,8 +2,13 @@ import React, { useState } from "react";
 import profileImg from "../../assets/images/profile.png";
 import flag from "../../assets/images/flag.png";
 
-const PlayerCard = ({ player }) => {
+const PlayerCard = ({ player, setAvailableBlance, availableBlance }) => {
   const [isSelected, setIsSelected] = useState(false);
+
+  const handleSelected = (player) => {
+    setIsSelected(true);
+    setAvailableBlance(availableBlance - player.price);
+  };
   return (
     <div className="card bg-base-100  shadow-sm p-4 ">
       <figure>
@@ -34,7 +39,13 @@ const PlayerCard = ({ player }) => {
           </div>
           <div className="flex justify-between ">
             <h2 className="font-bold">Price: ${player.price}</h2>
-            <button disabled={isSelected} onClick={() => setIsSelected(true)} className="btn ">
+            <button
+              disabled={isSelected}
+              onClick={() => {
+                handleSelected(player);
+              }}
+              className="btn "
+            >
               {isSelected ? "Selected" : "Choose Player"}
             </button>
           </div>

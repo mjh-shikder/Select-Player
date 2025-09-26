@@ -1,0 +1,20 @@
+import React from 'react';
+import navImg from "./../../assets/images/logo.png";
+import coin from "./../../assets/images/Currency.png";
+
+const Navbar = ({availableBlance}) => {
+    return ( <div className="navbar w-11/12 mx-auto ">
+        <div className="flex-1">
+          <a className=" text-xl">
+            <img className="w-[60px] h-[60px] " src={navImg} alt="" />
+          </a>
+        </div>
+        <div className="flex items-center">
+            <span className="mr-2">{ availableBlance}</span>
+          <span className="mr-2">Coins </span>
+          <img src={coin} alt="" />
+        </div>
+      </div>);
+};
+
+export default Navbar;
